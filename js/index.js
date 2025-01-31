@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 
 rl.question("Enter a card number: ", (cardNumber) => {
     if (NigerianBankCardValidator.isValidCardNum(cardNumber)) {
-        console.log(`${cardNumber} is a ${NigerianBankCardValidator.whatCard(cardNumber)}`);
+        console.log(`${cardNumber} is a valid ${NigerianBankCardValidator.whatCard(cardNumber)}`);
     } else {
         console.log(`${cardNumber} is an invalid Card Number`);
     }
