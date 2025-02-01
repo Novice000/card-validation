@@ -1,5 +1,5 @@
 class NigerianBankCardValidator {
-  static visaRegex: RegExp = new RegExp("^4[0-9]{12}(?:[0-9]{3})?$");
+  static visaRegex: RegExp = new RegExp("^4[0-9]{12}([0-9]{3})?$");
   static masterCardRegex: RegExp = new RegExp(
     "^(5[1-5][0-9]{14}|2[2-6][0-9]{14}|27[0-1][0-9]{13}|2720[0-9]{12})$"
   );
